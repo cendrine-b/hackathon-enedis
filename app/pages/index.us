@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Electric</title>
+    <link rel="icon" href="../static/favicon.ico" />
 
     <link rel="stylesheet" type="text/css" href="<%= css %>" media="all" />
 </head>
