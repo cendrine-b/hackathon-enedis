@@ -1,3 +1,4 @@
+language: node_js
 addons:
   apt:
     sources:
@@ -7,19 +8,17 @@ addons:
     - g++-4.8
 env:
 - CXX=g++-4.8
-
+node_js:
+- 8.0
 branches:
   only:
     - master
-
 cache:
   directories:
     - node_modules
-
 script:
-  - npm run build.prod
   - "lineman spec-ci"
-
+  - npm run build.prod
 deploy:
   provider: pages
   skip_cleanup: true
@@ -27,6 +26,3 @@ deploy:
   local_dir: dist
   on:
     branch: master
-
-node_js:
-- 8.0
