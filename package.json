@@ -9,7 +9,8 @@
     "test": "lineman spec-ci",
     "production": "lineman clean build && cd server && babel-node index.js",
     "server": "cd server && babel-node index.js",
-    "createAdmin": "cd server && babel-node ./api/userCreation.js"
+    "createAdmin": "cd server && babel-node ./api/userCreation.js",
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://cendrine-b.github.io/hackathon-enedis/\""
   },
   "dependencies": {
     "bcrypt": "",
