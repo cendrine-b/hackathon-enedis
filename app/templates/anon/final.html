@@ -1,0 +1,26 @@
+<div class="" ng-controller="NavbarController">
+
+  <div class="row hearts" style="font-size: 2em;">
+    <span ng-show="{{ countHeart }} >= 1" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <span ng-show="{{ countHeart }} >= 2" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <span ng-show="{{ countHeart }} >= 3" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <span ng-show="{{ countHeart }} >= 4" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+    <span ng-show="{{ countHeart }} >= 5" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+  </div>
+
+  <div class="" ng-show="{{ countHeart }} > 3">
+    <h1>Bien joué&nbsp;!</h1>
+    <p></p>
+  </div>
+
+  <div class="" ng-show="{{ countHeart }} === 3">
+    <h1>Pas mal&nbsp;!</h1>
+    <p></p>
+  </div>
+
+  <div class="" ng-show="{{ countHeart }} < 3">
+    <h1>Direct à l'hosto&nbsp;!</h1>
+    <p></p>
+  </div>
+
+</div>

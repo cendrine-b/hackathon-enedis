@@ -2,6 +2,130 @@
 // Use `@import` to use other less files
 // relative to 'app/css' or 'vendor/css'.
 
+@green: #93C90E;
+@blue: #005EB8;
+
+body,
+html {
+  font-family: "Helvetica Neue", Helvetica, "Ubuntu", sans-serif;
+  font-size: 16px;
+  line-height: 1.25em;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: @blue;
+}
+
+/* ------------------------------ VERTICALLY CENTER PAGES ------------------------------ */
+.vertical-center {
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+  margin: 0.8rem auto;
+}
+
+/* --------------------------- NAVBAR --------------------------- */
+.navbar-header {
+    float: left;
+    padding: 1em;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+.navbar-brand {
+  float: none;
+}
+.navbar-default {
+  border: none;
+  margin: 0;
+}
+.navbar-default .container-fluid {
+  // background-color: rgba(0, 94, 184, 0.25);
+  background-color: @green;
+  border: none;
+}
+.hearts {
+  margin: 0;
+  padding: 0;
+}
+.hearts span {
+  font-size: 1.6em;
+  color: red;
+}
+.hearts .text-hearts {
+  font-size: 16px;
+  color: white;
+}
+
+/* --------------------------- Links --------------------------- */
+a,
+a:focus,
+a:hover {
+  color: white;
+}
+
+/* --------------------------- Custom default button --------------------------- */
+.btn-default {
+  color: white;
+  font-size: 2em;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  text-decoration: none;
+  border-radius: 12px 0 12px 0;
+  border: 0.25em solid @green;
+  padding: 1em;
+  background-color: @green;
+}
+
+.btn-default:active,
+.btn-default:focus,
+.btn-default:hover {
+  border: 0.25em solid @green;
+  background-color: white;
+}
+
+
+
+.lead {
+  margin-top: 50px;
+}
+
+/* --------------------------- GIF --------------------------- */
+video {
+  height: 100vh;
+}
+
+/* --------------------------- QUESTIONPAGE --------------------------- */
+/* .general-button {
+  font-size: 1.4em;
+  line-height: 1.2em;
+  white-space: normal;
+  text-shadow: none;
+  background-color: @green;
+  border: solid  0.2rem;
+  box-shadow: none;
+  margin: 0;
+  padding: 0.3rem 0.6rem;
+} */
+
+/* --------------------------- ANSWER --------------------------- */
+.ok {
+  padding: 0.5em 1em;
+}
+
+
+
+
+
+
 #reader {
   height: 100%;
   margin: 0;
